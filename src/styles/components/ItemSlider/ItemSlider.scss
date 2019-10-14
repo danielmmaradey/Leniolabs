@@ -1,0 +1,102 @@
+.itemslider {
+  width: 100%;
+  display: flex;
+  transition: 0.4s ease;
+  overflow: hidden;
+  background: transparent;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.45);
+  border-bottom: 1px solid #ebeaea;
+  height: 0px;
+  margin-top: -1px;
+  .btnpre {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    // position: absolute;
+    .btn-scrolling {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #adadad8c;
+      line-height: 1px;
+      border-radius: 6px;
+      background-color: #66656515;
+      margin-top: 15px;
+      outline: none;
+      .fa {
+        color: #666565;
+        margin-top: 2px;
+      }
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  .content-itemslider {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    .typefields {
+      display: flex;
+      height: 100px;
+      align-items: center;
+      .content-typfields {
+        display: flex;
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+        .item-slider {
+          display: flex;
+          flex-wrap: wrap;
+          .dv-label {
+            font-size: 12px !important;
+            width: 100px;
+            font-weight: 400;
+            padding-left: 15px;
+            padding-bottom: 5px;
+          }
+          .dv-input-field {
+            width: 180px;
+            border: 1px solid #adadad8c;
+            font-size: 11px !important;
+            border-radius: 4px;
+            height: 30px !important;
+            padding-left: 10px;
+            color: #666565;
+            outline: none;
+            transition: all 0.2s ease;
+            &:hover {
+              border: 1px solid #83838383;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.viewItems{
+  height: 110px !important;
+  margin-top: 0;
+  transition: 0.4s ease;
+}
+
+.typefields {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+
+.typefields.activesa {
+  // background: rgba(255,255,255,0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  cursor: -webkit-grabbing;
+}
